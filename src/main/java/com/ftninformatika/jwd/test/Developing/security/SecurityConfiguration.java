@@ -87,7 +87,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 //					.maxAge(3600);
 
 			registry.addMapping("/**")
-					.allowedOrigins("*")
+					.allowedOrigins("http://localhost:3000")
 					.allowedMethods("OPTIONS", "HEAD", "GET", "PUT", "POST", "DELETE", "PATCH")
 					.allowCredentials(true)
 					.maxAge(3600);
