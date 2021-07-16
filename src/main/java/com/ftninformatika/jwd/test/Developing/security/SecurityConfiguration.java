@@ -90,6 +90,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 					.allowedOrigins("http://localhost:3000")
 					.allowedMethods("OPTIONS", "HEAD", "GET", "PUT", "POST", "DELETE", "PATCH")
 					.allowCredentials(true)
+					.exposedHeaders("Total-Pages")
 					.maxAge(3600);
 		}
 	}
